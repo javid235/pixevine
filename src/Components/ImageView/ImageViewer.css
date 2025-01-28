@@ -131,9 +131,9 @@
 }
 .count-cont{
     position: fixed;
-    bottom: 30px;
+    bottom: 12px;
     left: 50%;
-    transform: translate(-50%, -30px);
+    transform: translate(-50%, -12px);
 }
 .image-count-full{
     display: flex;

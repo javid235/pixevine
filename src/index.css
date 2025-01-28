@@ -282,10 +282,26 @@ input::placeholder, textarea::placeholder {
 }
 
 /* Large (desktops, 992px and below) */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .title h1{
+    font-size:38px;
+  }
+}
 
 /* Medium (tablets, 768px and below) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .title h1{
+    font-size:35px;
+  }
+  .work-card{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .work-card-odd{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 /* Small (phones, 576px and below) */
 @media (max-width: 576px) {
@@ -306,7 +322,6 @@ input::placeholder, textarea::placeholder {
   }
   .title h1{
     font-size:35px;
-    margin-bottom: -20px;
   }
 }
 @media (max-width: 510px){

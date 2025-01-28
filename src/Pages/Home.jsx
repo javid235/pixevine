@@ -8,6 +8,7 @@ import useMeasure from 'react-use-measure'
 import { useMotionValue } from 'motion/react'
 import { animate } from 'motion'
 import { motion } from 'framer-motion'
+import HomeAbout from '../Components/HomeAbout/HomeAbout'
 
 const Home = () => {
   let [ref, {width}]= useMeasure()
@@ -85,6 +86,8 @@ const Home = () => {
         </motion.div>
       </div>
 
+      <HomeAbout/>
+
       <div className='works-cont'>
         <motion.div
           initial={{ opacity: 0, y: '-50%' }}
@@ -106,7 +109,7 @@ const Home = () => {
                   initial={{ opacity: 0, x: '-150px', }}
                   whileInView={{ opacity: 1, x: '0%', }}
                   viewport={{ once: true, amount: 0.5,  }} // Animates when 50% of the element is in view
-                  transition={{ duration: 0.8, }}
+                  transition={{ duration: 0.5, }}
                 >
                   <WorksCard
                     key={i}
@@ -124,8 +127,8 @@ const Home = () => {
                 <motion.div
                   initial={{ opacity: 0, x: '150px' }}
                   whileInView={{ opacity: 1, x: '0%' }}
-                  viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
-                  transition={{ delay:0.3,duration: 0.8 }}
+                  viewport={{ once: true, amount: 0.3 }} // Animates when 50% of the element is in view
+                  transition={{ delay:0.3,duration: 0.5 }}
                 >
                   <WorksCard
                     key={i}
