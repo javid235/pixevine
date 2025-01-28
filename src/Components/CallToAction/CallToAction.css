@@ -51,17 +51,19 @@
 @media (max-width: 992px) {}
 
 /* Medium (tablets, 768px and below) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .cta p{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
 
 /* Small (phones, 576px and below) */
 @media (max-width: 576px) {
 .cta-cont{
   margin-top: 30px;
 }
-.cta p{
-  font-size: 28px;
-  margin-top: 10px;
-}
+
 .cta button{
   margin-top: 20px;
   margin-bottom: 20px;

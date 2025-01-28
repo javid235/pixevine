@@ -46,7 +46,7 @@ input::placeholder, textarea::placeholder {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  margin-top: -118px;
+  margin-top: -116px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,7 @@ input::placeholder, textarea::placeholder {
 /* Small (phones, 576px and below) */
 @media (max-width: 700px) {
  .home-cont{
-        margin-top: -100px;
+        margin-top: -99px;
  }
 
 }
@@ -516,5 +516,108 @@ input::placeholder, textarea::placeholder {
   .contact h1{
     font-size: 40px;
     margin-bottom: 20px;
+  }
+}
+
+/* about */
+.about-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-banner{
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+.about-bg-img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.about-logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* -------------- */
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 40px 6%;
+  max-width: 1300px;
+}
+/* -------div1 */
+.about-div1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+}
+.div1-txt{
+  color: white;
+}
+.div1-txt h4{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about-txt-logo{
+  height: 36px;
+  margin-bottom: -2px;
+}
+.div1-txt p{
+  max-width: 700px;
+}
+.about-img-1{
+  border-radius: 17px;
+  width: 100%;
+}
+/* ----------div2 */
+.about-div2, .about-div3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.about-img-2{
+  width: 100%;
+  border-radius: 17px;
+}
+.div2-txt{
+  color: white;
+}
+.div2-txt h4{
+  font-size:36px ;
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .about-div1{
+    gap: 30px;
+  }
+  .about-img-1{
+    width: 100%;
+    border-radius: 17px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .about-div2{
+    grid-template-columns: 1fr;
+  }
+  .about-div3{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-logo{
+    width: 70%;
+  }
+  .about-bg-img{
+    height: 300px;
   }
 }
