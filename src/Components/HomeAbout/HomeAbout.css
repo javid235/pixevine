@@ -2,11 +2,86 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 20px 0px 20px;
 }
 .home-about{
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
+    max-width: 1200px;
     background-color: #1C2E22;
     padding: 20px;
+    border-radius: 17px;
+}
+.h-about-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+.h-about-title h1{
+    color: white;
+    font-size: 40px;
+}
+.home-about-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.h-about-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.h-about-bottom button{
+font-weight: 600;
+  color: white;
+  background-color: transparent;
+  padding: 5px 9px;
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .3s ease-in-out;
+  text-wrap: nowrap;
+}
+.h-about-bottom button:hover{
+  background-color: #4c4100;
+}
+.h-about-bottom button:active{
+  background-color: #b19700;
+}
+.h-about-bottom button img{
+ margin-left: 10px;
+}
+/* Extra large (large desktops, 1200px and below) */
+@media (max-width: 1200px) {
+   
+
+}
+
+/* Large (desktops, 992px and below) */
+@media (max-width: 992px) {}
+
+/* Medium (tablets, 768px and below) */
+@media (max-width: 768px) {
+     .h-about-top{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .h-about-bottom{
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+    .h-about-title h1{
+        font-size: 34px;
+    }
+}
+  
+/* Small (phones, 576px and below) */
+@media (max-width: 576px) {
+
 }

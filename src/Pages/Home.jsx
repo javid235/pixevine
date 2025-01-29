@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import LogoText from '../assets/logotext.svg'
 import bestWorks from '../assets/bestworks'
 import WorksCard from '../Components/WorkCard/WorksCard'
 import CallToAction from '../Components/CallToAction/CallToAction'
@@ -35,21 +34,20 @@ const Home = () => {
         <div className='home'>
           <div className='left-home'></div>
           <div className='right-home'>
-            <motion.img
-              initial={{ opacity: 0, y: '-100%' }}
-              animate={{ opacity: 1, y: '0%' }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className='logo-text'
-              src={LogoText}
-              alt=''
-            />
             <motion.h2
               initial={{ opacity: 0, y: '-30px' }}
               animate={{ opacity: 1, y: '0%' }}
-              transition={{ delay: 1, duration: 0.5 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
             >
               Transforming Ideas into Visual Masterpieces.
             </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: '-100%' }}
+              animate={{ opacity: 1, y: '0%' }}
+              transition={{ delay: 1, duration: 0.5 }}
+              className='logo-text'
+            >All Graphic Design Services Available !</motion.p>
+            
             <Link to='/contact'>
               <motion.button
                 initial={{ opacity: 0 }}
@@ -92,7 +90,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0, y: '-50%' }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.9 }} // Animates when 50% of the element is in view
+          viewport={{ once: true, amount: 0.7 }} // Animates when 50% of the element is in view
           transition={{ delay: 0.3,duration: 1}}
           style={{marginBottom:'35px',}}
           className='title'

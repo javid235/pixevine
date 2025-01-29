@@ -36,7 +36,7 @@ const About = () => {
               Tailored <span className='text-highlight'>Design</span> Solutions
             </h4>
             <p>
-              At Craftivault, we specialize in providing high-quality design
+              At pixevine, we specialize in providing high-quality design
               solutions tailored to meet your specific needs. From logo creation
               and branding to packaging, social media content, and beyond, we
               are here to help you communicate your vision effectively.
@@ -67,9 +67,9 @@ const About = () => {
             </h1>
           </div>
           <p>
-            Let Craftivault turn your ideas into visuals that inspire and
-            elevate your brand. We’re here to support your journey with designs
-            crafted with care and precision.
+            Let pixevine turn your ideas into visuals that inspire and elevate
+            your brand. We’re here to support your journey with designs crafted
+            with care and precision.
           </p>
           <Link to='/contact'>
             <button>Contact Now</button>

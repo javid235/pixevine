@@ -12,23 +12,23 @@ const Footer = () => {
       <div className='footer-container'>
         {/* Logo Section */}
         <div className='footer-brand'>
-          <img src={logo} alt='craftivault Logo' className='footer-logo' />
+          <img src={logo} alt='pixevine Logo' className='footer-logo' />
         </div>
 
         {/* Get in Touch Section */}
         <div className='footer-contact'>
           <h4>GET IN TOUCH</h4>
-          <p>craftivault.info@gmail.com</p>
+          <p>pixevine.info@gmail.com</p>
           <div className='footer-socials'>
             <a
-              href='https://www.instagram.com/craftivault/'
+              href='https://www.instagram.com/pixevine/'
               target='_blank'
               aria-label='Instagram'
             >
               <img src={insta} alt='' />
             </a>
             <a
-              href='https://www.behance.net/craftivaultDesign'
+              href='https://www.behance.net/pixevineDesign'
               target='_blank'
               aria-label='YouTube'
             >
@@ -77,7 +77,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className='footer-bottom'>
-        <p>&copy; 2024 craftivault. All rights reserved.</p>
+        <p>&copy; 2024 pixevine. All rights reserved.</p>
       </div>
     </footer>
   )

@@ -86,15 +86,12 @@ const Contact = () => {
           <hr />
           <div className='get-in-touch'>
             <p className='get-title'>get in touch</p>
-            <p className='email'>craftivault.info@gmail.com</p>
+            <p className='email'>pixevine.info@gmail.com</p>
             <div className='contact-socials'>
-              <a href='https://www.instagram.com/craftivault/' target='_blank'>
+              <a href='https://www.instagram.com/pixevine/' target='_blank'>
                 <img src={insta} alt='' />
               </a>
-              <a
-                href='https://www.behance.net/craftivaultDesign'
-                target='_blank'
-              >
+              <a href='https://www.behance.net/pixevineDesign' target='_blank'>
                 <img src={behance} alt='' />
               </a>
               <a href='' target='_blank'>

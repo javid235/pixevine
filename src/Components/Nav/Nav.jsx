@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
 import menuIcon from '../../assets/menuIcon.svg'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import './Nav.css'
 
 const Nav = () => {
