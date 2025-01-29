@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import bestWorks from '../assets/bestworks'
+import bestWorks from '../assets/data/bestworks'
 import WorksCard from '../Components/WorkCard/WorksCard'
 import CallToAction from '../Components/CallToAction/CallToAction'
 import { Link } from 'react-router-dom'

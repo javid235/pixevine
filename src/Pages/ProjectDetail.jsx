@@ -1,7 +1,7 @@
 import React from 'react'
 import CallToAction from '../Components/CallToAction/CallToAction'
 import ImageViewer from '../Components/ImageView/ImageViewer'
-import works from '../assets/work'
+import works from '../assets/data/work'
 import { useParams } from 'react-router-dom'
 
 

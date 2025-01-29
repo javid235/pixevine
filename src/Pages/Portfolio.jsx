@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import works from '../assets/work'
+import works from '../assets/data/work'
 import LazyImage from '../Components/LazyLoading/LazyImage/LazyImage'
 import Skeleton from '../Components/LazyLoading/Skeleton/Skeleton' // Dummy loader
 
 const Portfolio = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false)
+  const [delayCompleted, setDelayCompleted] = useState(false)
 
   useEffect(() => {
     // Preload all images
@@ -19,6 +20,13 @@ const Portfolio = () => {
 
     // When all images are loaded, update state
     Promise.all(preloadImages).then(() => setImagesLoaded(true))
+
+    // Optional: Delay the transition for smoother UX
+    const delayTimer = setTimeout(() => {
+      setDelayCompleted(true)
+    }, 500) // Adjust timing if needed
+
+    return () => clearTimeout(delayTimer)
   }, [])
 
   return (
@@ -26,15 +34,17 @@ const Portfolio = () => {
       <div className='portfolio'>
         <h1>Portfolio</h1>
 
-        {!imagesLoaded ? (
-          // Show Full-page Skeleton until all images are loaded
+        {!imagesLoaded || !delayCompleted ? (
+          // Show Full-page Skeleton until ALL images are loaded
           <div className='skeleton-grid'>
-            {works.map((_, index) => (
-              <Skeleton key={index} />
-            ))}
+            {Array(works.length)
+              .fill(0)
+              .map((_, index) => (
+                <Skeleton key={index} />
+              ))}
           </div>
         ) : (
-          // Render actual images once all are loaded
+          // Render everything at once after images are fully loaded
           <>
             {['Branding', 'Ui Design', 'Package Design'].map((category) => (
               <div key={category} className='cato-grid-cont'>

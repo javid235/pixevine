@@ -1,6 +1,6 @@
-import work1 from './creativise/8.webp'
-import work2 from './longeuity/work2.webp'
-import miso1 from './miso/miso1.webp'
+import work1 from '../creativise/8.webp'
+import work2 from '../longeuity/work2.webp'
+import miso1 from '../miso/miso1.webp'
 
 let bestWorks = [
   {
