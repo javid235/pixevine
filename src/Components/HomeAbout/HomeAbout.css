@@ -1,0 +1,12 @@
+.home-about-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-about{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    background-color: #1C2E22;
+    padding: 20px;
+}
