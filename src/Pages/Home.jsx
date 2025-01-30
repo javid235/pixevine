@@ -8,6 +8,7 @@ import { useMotionValue } from 'motion/react'
 import { animate } from 'motion'
 import { motion } from 'framer-motion'
 import HomeAbout from '../Components/HomeAbout/HomeAbout'
+import Services from './Services'
 
 const Home = () => {
   let [ref, {width}]= useMeasure()
@@ -46,8 +47,10 @@ const Home = () => {
               animate={{ opacity: 1, y: '0%' }}
               transition={{ delay: 1, duration: 0.5 }}
               className='logo-text'
-            >All Graphic Design Services Available !</motion.p>
-            
+            >
+              All Graphic Design Services Available !
+            </motion.p>
+
             <Link to='/contact'>
               <motion.button
                 initial={{ opacity: 0 }}
@@ -84,15 +87,17 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <HomeAbout/>
+      <HomeAbout />
+
+      <Services/>
 
       <div className='works-cont'>
         <motion.div
           initial={{ opacity: 0, y: '-50%' }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.7 }} // Animates when 50% of the element is in view
-          transition={{ delay: 0.3,duration: 1}}
-          style={{marginBottom:'35px',}}
+          viewport={{ once: true}} // Animates when 50% of the element is in view
+          transition={{ delay: 0.3, duration: 1 }}
+          style={{ marginBottom: '35px' }}
           className='title'
         >
           <h1>
@@ -104,10 +109,10 @@ const Home = () => {
             if (i % 2 == 0) {
               return (
                 <motion.div
-                  initial={{ opacity: 0, x: '-150px', }}
-                  whileInView={{ opacity: 1, x: '0%', }}
-                  viewport={{ once: true, amount: 0.5,  }} // Animates when 50% of the element is in view
-                  transition={{ duration: 0.5, }}
+                  initial={{ opacity: 0, x: '-150px' }}
+                  whileInView={{ opacity: 1, x: '0%' }}
+                  viewport={{ once: true, amount: 0.5 }} // Animates when 50% of the element is in view
+                  transition={{ duration: 0.5 }}
                 >
                   <WorksCard
                     key={i}
@@ -126,7 +131,7 @@ const Home = () => {
                   initial={{ opacity: 0, x: '150px' }}
                   whileInView={{ opacity: 1, x: '0%' }}
                   viewport={{ once: true, amount: 0.3 }} // Animates when 50% of the element is in view
-                  transition={{ delay:0.3,duration: 0.5 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   <WorksCard
                     key={i}
@@ -143,6 +148,26 @@ const Home = () => {
             }
           })}
         </div>
+        <div
+          style={{
+            background: '#ffffff1b',
+            height: '2px',
+            width: '100%',
+            marginTop: '20px',
+          }}
+        ></div>
+        <div className='show-more-cont'>
+          <Link to='/portfolio'>
+            <button className='show-more'>View All Works</button>
+          </Link>
+        </div>
+        <div
+          style={{
+            background: '#ffffff1b',
+            height: '2px',
+            width: '100%',
+          }}
+        ></div>
       </div>
 
       <CallToAction />
