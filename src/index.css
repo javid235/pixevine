@@ -92,6 +92,9 @@ input::placeholder, textarea::placeholder {
 .right-home button:active{
   background-color: #087229;
 }
+.scroll-down{
+  display: none;
+}
 /* Extra large (large desktops, 1200px and below) */
 @media (max-width: 1200px) {
 
@@ -122,6 +125,13 @@ input::placeholder, textarea::placeholder {
   }
   .right-home h2{
     text-align: center;
+  }
+  .scroll-down{
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 120px;
   }
 }
 /* Small (phones, 576px and below) */

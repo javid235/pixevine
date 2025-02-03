@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import bestWorks from '../assets/data/bestworks'
+import scrollDown from '../assets/scrolldown.svg'
 import WorksCard from '../Components/WorkCard/WorksCard'
 import CallToAction from '../Components/CallToAction/CallToAction'
 import { Link } from 'react-router-dom'
@@ -60,6 +61,7 @@ const Home = () => {
                 Contact Now
               </motion.button>
             </Link>
+            <img className='scroll-down' src={scrollDown} alt="" />
           </div>
         </div>
       </div>
