@@ -77,7 +77,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className='footer-bottom'>
-        <p>&copy; 2024 pixevine. All rights reserved.</p>
+        <p>CEO - Javid | Co-Founder - Farid</p>
       </div>
     </footer>
   )
