@@ -9,24 +9,26 @@ const Services = () => {
   const servicesData = [
     {
       header: 'Logo Design',
-      subheader: 'Monitors activity to identify project roadblocks',
+      subheader:
+        '• Custom logo designs tailored to your brand identity\n• 2-6 initial concepts depending on the package\n• Revisions and final files in multiple formats (JPG, PNG, PDF, SVG, AI)',
       icon: icon1,
     },
     {
       header: 'Website Design',
       subheader:
-        'Scans our talent network to create the optimal team for your project',
+        '• Custom landing pages or full website designs\n• Mobile and desktop responsive layouts\n• Interactive prototypes and developer handovers',
       icon: icon2,
     },
     {
       header: 'Packaging Design',
       subheader:
-        'Scans our talent network to create the optimal team for your project',
+        '• Unique packaging designs for labels, boxes, or bags\n• 2-5 revisions based on the selected package\n• Print-ready files and 3D mockups for product previews',
       icon: icon3,
     },
     {
       header: 'Brand & Identity Design',
-      subheader: 'Regularly evaluates our talent to ensure quality',
+      subheader:
+        '• Logo, business card, and letterhead design\n• Social media kit (profile, cover, and templates)\n• Full brand guidelines (colors, fonts, logo usage)',
       icon: icon4,
     },
   ]
