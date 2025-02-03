@@ -93,7 +93,11 @@ input::placeholder, textarea::placeholder {
   background-color: #087229;
 }
 .scroll-down{
-  display: none;
+  display: block;
+   position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 120px;
 }
 /* Extra large (large desktops, 1200px and below) */
 @media (max-width: 1200px) {
