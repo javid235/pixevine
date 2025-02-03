@@ -1,12 +1,17 @@
+import React from 'react'
 import './Service.style.css'
-// import ServiceIcon from '../../Assets/images/icon-calculator.svg'
 
-const ServiceCard = ({ header, subheader, icon, borderColor }) => {
+const ServiceCard = ({ header, subheader, icon }) => {
   return (
-    <div className='service-card-new' style={{ borderColor: borderColor }}>
-      <header className='service-header'>{header}</header>
-      <p className='service-subheader'>{subheader}</p>
-      <img className='icon' src={icon} alt='service icon'></img>
+    <div className='service-card-new'>
+      <div className='service-card-cont'>
+        <div>
+          <header className='service-header'>{header}</header>
+          <p className='service-subheader'>{subheader}</p>
+        </div>
+
+        <img className='icon' src={icon} alt='service icon' />
+      </div>
     </div>
   )
 }
