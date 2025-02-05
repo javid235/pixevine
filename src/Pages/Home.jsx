@@ -12,12 +12,12 @@ import HomeAbout from '../Components/HomeAbout/HomeAbout'
 import Services from './Services'
 
 const Home = () => {
-  let [ref, {width}]= useMeasure()
-  const xTranslation = useMotionValue(0);
+  let [ref, { width }] = useMeasure()
+  const xTranslation = useMotionValue(0)
 
-  useEffect (()=>{
+  useEffect(() => {
     let controls
-    let finalPosition = - width - 100 
+    let finalPosition = -width - 100
     console.log(finalPosition)
     controls = animate(xTranslation, [0, finalPosition], {
       ease: 'linear',
@@ -39,14 +39,14 @@ const Home = () => {
             <motion.h2
               initial={{ opacity: 0, y: '-30px' }}
               animate={{ opacity: 1, y: '0%' }}
-              transition={{ delay: 0.5, duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.3 }}
             >
               Transforming Ideas into Visual Masterpieces.
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: '-100%' }}
               animate={{ opacity: 1, y: '0%' }}
-              transition={{ delay: 1, duration: 0.5 }}
+              transition={{ delay: 0.7, duration: 0.3 }}
               className='logo-text'
             >
               All Graphic Design Services Available !
@@ -56,12 +56,19 @@ const Home = () => {
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 0.5 }}
+                transition={{ delay: 1, duration: 0.8 }}
               >
                 Contact Now
               </motion.button>
             </Link>
-            <img className='scroll-down' src={scrollDown} alt="" />
+            <motion.img
+              initial={{ opacity: 0, y: '-100%' }}
+              animate={{ opacity: 1, y: '0%' }}
+              transition={{ delay: 1.8, duration: 1, type: 'spring' }}
+              className='scroll-down'
+              src={scrollDown}
+              alt=''
+            />
           </div>
         </div>
       </div>
@@ -73,17 +80,17 @@ const Home = () => {
           style={{ x: xTranslation }}
         >
           <h2>Brand Design</h2>
-          <h2>Ux/Ui Design</h2>
+          <h2>Ux/Web Design</h2>
           <h2>Social media</h2>
           <h2>Package Design</h2>
 
           <h2>Brand Design</h2>
-          <h2>Ux/Ui Design</h2>
+          <h2>Ux/Web Design</h2>
           <h2>Social media</h2>
           <h2>Package Design</h2>
 
           <h2>Brand Design</h2>
-          <h2>Ux/Ui Design</h2>
+          <h2>Ux/Web Design</h2>
           <h2>Social media</h2>
           <h2>Package Design</h2>
         </motion.div>
@@ -91,13 +98,13 @@ const Home = () => {
 
       <HomeAbout />
 
-      <Services/>
+      <Services />
 
       <div className='works-cont'>
         <motion.div
           initial={{ opacity: 0, y: '-50%' }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true}} // Animates when 50% of the element is in view
+          viewport={{ once: true }} // Animates when 50% of the element is in view
           transition={{ delay: 0.3, duration: 1 }}
           style={{ marginBottom: '35px' }}
           className='title'

@@ -81,9 +81,10 @@ const Nav = () => {
                   style={{
                     display: 'flex',
                     width: '100%',
-                    height: '60px',
+                    height: '22px',
                     paddingRight: '18px',
                     justifyContent: 'end',
+                
                   }}
                 >
                   <motion.img

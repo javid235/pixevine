@@ -46,7 +46,7 @@ const Portfolio = () => {
         ) : (
           // Render everything at once after images are fully loaded
           <>
-            {['Branding', 'Ui Design', 'Package Design'].map((category) => (
+            {['Branding', 'Web Design', 'Package Design'].map((category) => (
               <div key={category} className='cato-grid-cont'>
                 <h2 className='text-highlight'>{category}</h2>
                 <div className='items-grid'>

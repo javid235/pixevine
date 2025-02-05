@@ -51,7 +51,7 @@ let works = [
   {
     id: 3,
     name: 'Longeuity',
-    title: 'Ui Design',
+    title: 'Web Design',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     thumbnail: work2,
@@ -60,7 +60,7 @@ let works = [
   {
     id: 4,
     name: 'ERP 8',
-    title: 'Ui Design',
+    title: 'Web Design',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     thumbnail: erp8,
@@ -70,11 +70,12 @@ let works = [
     id: 5,
     name: 'Miso Tea',
     title: 'Package Design',
-    details: 'This design showcases a creative approach to branding and packaging, blending modern aesthetics with a clean and visually engaging layout. The concept focuses on a balance of simplicity and sophistication, utilizing bold typography, strategic color choices, and a structured composition to enhance brand identity.\n\nThe design process involved in-depth research on industry trends, user experience, and visual storytelling to ensure the final result effectively communicates the brand’s message. From layout precision to typography selection, every detail was carefully crafted to create a compelling and memorable visual identity.\n\nThis project reflects my expertise in graphic design, branding, and packaging, demonstrating my ability to create cohesive, high-impact designs that resonate with the target audience.',
+    details:
+      'This design showcases a creative approach to branding and packaging, blending modern aesthetics with a clean and visually engaging layout. The concept focuses on a balance of simplicity and sophistication, utilizing bold typography, strategic color choices, and a structured composition to enhance brand identity.\n\nThe design process involved in-depth research on industry trends, user experience, and visual storytelling to ensure the final result effectively communicates the brand’s message. From layout precision to typography selection, every detail was carefully crafted to create a compelling and memorable visual identity.\n\nThis project reflects my expertise in graphic design, branding, and packaging, demonstrating my ability to create cohesive, high-impact designs that resonate with the target audience.',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     thumbnail: miso1,
     images: [miso1, miso2, miso3],
   },
 ]
-export default works 
+export default works
