@@ -29,6 +29,14 @@ import zsup1 from '../zSup/1.jpg'
 import zsup2 from '../zSup/2.jpg'
 import zsup3 from '../zSup/3.jpg'
 
+import pool1 from '../poolshark/1.jpg'
+import pool2 from '../poolshark/2.jpg'
+import pool3 from '../poolshark/3.jpg'
+import pool4 from '../poolshark/4.jpg'
+import pool5 from '../poolshark/5.jpg'
+import pool6 from '../poolshark/6.jpg'
+import pool7 from '../poolshark/7.jpg'
+
 let works = [
   {
     id: 1,
@@ -91,6 +99,17 @@ let works = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     thumbnail: zsup1,
     images: [zsup1, zsup2, zsup3],
+  },
+  {
+    id: 7,
+    name: 'Pool Sharks',
+    title: 'Branding',
+    details:
+      "This logo has been thoughtfully designed for a business specializing in swimming pool services. To create a visually compelling and industry-relevant identity, I integrated the imagery of sharks with the brand name in a seamless and cohesive manner. The choice of sharks symbolizes strength, reliability, and a deep connection to water, making it a perfect representation of the company's expertise in pool maintenance and services. By merging the shark element effortlessly with the typography, the design maintains a professional yet dynamic appeal, ensuring strong brand recognition while effectively conveying the essence of the business.",
+    description:
+      'This logo has been meticulously crafted to represent a swimming pool service business with a strong, professional identity. By seamlessly integrating the imagery of sharks with the brand name, the design captures the essence of strength, reliability, and a deep connection to water. The shark symbolizes expertise and trust, reinforcing the company’s commitment to top-quality pool maintenance and services. With a sleek and cohesive design, this logo ensures instant recognition while conveying a dynamic and modern appeal.',
+    thumbnail: pool1,
+    images: [pool1, pool2, pool3, pool4, pool5, pool6, pool7],
   },
 ]
 export default works
