@@ -416,7 +416,7 @@ input::placeholder, textarea::placeholder {
 }
 .items-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 330px);
+  grid-template-columns: repeat(auto-fit, 320px);
   justify-content: start;
   align-items: center;
   justify-items: center;
@@ -424,7 +424,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .item{
-  width: 330px;
+  width: 320px;
   height: 180px;
   background-color: rgb(0, 0, 0);
   border-radius: 5px;
@@ -451,7 +451,7 @@ input::placeholder, textarea::placeholder {
 }
 @media (max-width: 700px){
   .portfolio{
-    max-width: 330px;
+    max-width: 320px;
   }
   .portfolio h1{
     font-size: 25px;
@@ -462,11 +462,11 @@ input::placeholder, textarea::placeholder {
     justify-content: center;
   }
   .item{
-    width: 247px;
+    width: 240px;
     height: 135px;
   }
   .portfolio{
-    max-width: 247px;
+    max-width: 240px;
   }
 }
 
