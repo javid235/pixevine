@@ -5,6 +5,7 @@ import leftArrow from '../../assets/leftarrow.svg'
 import rightArrow from '../../assets/rightarrow.svg'
 import full from '../../assets/full.svg'
 import './ImageViewer.css'
+import { div } from 'motion/react-client'
 
 const ImageViewer = (props) => {
   const [isVisible, setIsVisible] = useState(false)
@@ -35,7 +36,7 @@ const ImageViewer = (props) => {
   const toggleFullScreen = () => {
     setIsFullScreen(!isFullScreen)
   }
-
+ console.log(props.title)
   return (
     <AnimatePresence>
       {isFullScreen ? (
@@ -66,11 +67,11 @@ const ImageViewer = (props) => {
                 alt='Previous'
               />
             </button>
-              <img
-                className='image-full'
-                src={images[currentIndex]}
-                alt='Full View'
-              />
+            <img
+              className='image-full'
+              src={images[currentIndex]}
+              alt='Full View'
+            />
             <button
               className='right-btn-full'
               onClick={() => {
@@ -96,11 +97,22 @@ const ImageViewer = (props) => {
         </motion.div>
       ) : (
         <div className='image-view'>
-          <img
-            className='image-view-img'
-            src={images[currentIndex]}
-            alt='Image View'
-          />
+          {props.title === 'Web Design' ? (
+            <div className='image-view-img-web-cont'>
+              <img
+                className='image-view-img-web'
+                src={images[currentIndex]}
+                alt='Image View'
+              />
+            </div>
+          ) : (
+            <img
+              className='image-view-img'
+              src={images[currentIndex]}
+              alt='Image View'
+            />
+          )}
+
           <div className='image-navbar'>
             <div className='image-nav'>
               <button className='left-btn' onClick={handlePrev}>

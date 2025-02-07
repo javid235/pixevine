@@ -5,7 +5,8 @@ import icon1 from '../assets/logoIcon.svg'
 import icon2 from '../assets/webIcon.svg'
 import icon3 from '../assets/packageIcon.svg'
 import icon4 from '../assets/brandIcon.svg'
-const Services = () => {
+const Services = ({gradient}) => {
+  console.log(gradient)
   const servicesData = [
     {
       header: 'Logo Design',
@@ -53,9 +54,15 @@ const Services = () => {
   return (
     <article id='gallery'>
       <section className='img-group-container'>
-        <div>
+        <div
+          style={{
+            background: gradient
+              ? 'linear-gradient(to top, rgba(0, 0, 0, 0) 84%, rgba(37, 92, 55, 0.46) 125%, rgba(80, 200, 120, 1) 126%)'
+              : gradient,
+          }}
+        >
           <h2 className='service-head'>
-            Our <span className='text-highlight'>Services</span>
+            Our<span className='text-highlight'> Services</span>
           </h2>
           <ul className='img-group'>
             {servicesData.map((item, i) => (

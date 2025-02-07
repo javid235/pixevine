@@ -98,8 +98,6 @@ const Home = () => {
 
       <HomeAbout />
 
-      <Services />
-
       <div className='works-cont'>
         <motion.div
           initial={{ opacity: 0, y: '-50%' }}
@@ -178,6 +176,8 @@ const Home = () => {
           }}
         ></div>
       </div>
+
+      <Services gradient={false}/>
 
       <CallToAction />
     </>

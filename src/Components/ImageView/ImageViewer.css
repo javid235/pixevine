@@ -25,8 +25,28 @@
 .image-view-img{
   border-radius: 17px 17px 0 0;
   width: 797px;
-  height: fit-content;
+  height: 448.295px;
+  object-fit: cover;
+  object-position: 50% 0%;
 }
+
+.image-view-img-web-cont {
+  border-radius: 17px 17px 0 0;
+  width: 100%; /* Adjusts width based on screen size */
+  max-width: 768px; /* Prevents it from getting too large */
+  height: auto; /* Adjusts height dynamically */
+  max-height: 466px; /* Ensures it doesn't grow too much */
+  overflow-y: auto; /* Enables scrolling if needed */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  
+}
+
+.image-view-img-web {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes extra spacing */
+}
+
 .image-navbar{
   background-color: #0A481F;
   width: 100%;

@@ -5,10 +5,11 @@
 
 .service-head {
   text-align: center;
-  font-size: 40px;
+  font-size: 64px;
   color: white;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .img-group-container {
@@ -61,10 +62,12 @@
 }
 
 .progress {
-  height: 5px;
-  background: #50C878;
-  transform: scaleX(0);
-  margin-top: 60px;
+    height: 3px;
+    background: #50C878;
+    transform: scaleX(0);
+    margin-top: 60px;
+    margin: 60px 15% 0px 15%;
+    border-radius: 10px;
 }
 
 /* Service Card Styles */

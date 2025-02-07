@@ -22,12 +22,12 @@ const ProjectDetail = () => {
               {work.name} <span className='text-highlight'>{work.title}</span>
             </h1>
           </div>
-            <ImageViewer images={work.images} />
+          <ImageViewer title={work.title} images={work.images} />
           <div className='about-project'>
             <h2>
               About this <span className='text-highlight'>{work.title}</span>
             </h2>
-            <p style={{ whiteSpace: "pre-wrap" }}>{work.details}</p>
+            <p style={{ whiteSpace: 'pre-wrap' }}>{work.details}</p>
           </div>
         </div>
       </div>

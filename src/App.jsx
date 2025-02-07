@@ -90,7 +90,7 @@ const MainRoutes = () => {
                 exit='exit'
                 transition={{ duration: 0.2 }}
               >
-                <Services />
+                <Services gradient={true}/>
               </motion.div>
             }
           />
