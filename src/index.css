@@ -206,7 +206,7 @@ input::placeholder, textarea::placeholder {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 60px 6% 15px;
+  padding: 60px 6% 0;
   background-image: url(./assets/bestworkbg.png);
   background-repeat: no-repeat;
   background-position: 57% 50%;

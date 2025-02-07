@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { animate, scroll } from 'motion'
+import { motion } from 'framer-motion'
 import ServiceCard from '../Components/servcard/Service-card'
 import icon1 from '../assets/logoIcon.svg'
 import icon2 from '../assets/webIcon.svg'
@@ -60,9 +61,18 @@ const Services = ({gradient}) => {
               : gradient,
           }}
         >
-          <h2 className='service-head'>
-            Our<span className='text-highlight'> Services</span>
-          </h2>
+          <motion.div
+            initial={{ opacity: 0, y: '-50%' }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }} // Animates when 50% of the element is in view
+            transition={{ delay: 0.3, duration: 1 }}
+            style={{ marginBottom: '35px' }}
+            className='title'
+          >
+            <h1>
+              Our <span className='text-highlight'>Services</span>
+            </h1>
+          </motion.div>
           <ul className='img-group'>
             {servicesData.map((item, i) => (
               <ServiceCard
