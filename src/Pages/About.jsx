@@ -9,11 +9,12 @@ import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <div className='about-cont'>
-      <div className='about-banner'>
+    <><div className='about-banner'>
         <img className='about-logo' src={aboutLogo} alt='' />
         <img className='about-bg-img' src={aboutBg} alt='' />
       </div>
+    <div className='about-cont'>
+      
       <div className='about'>
         <div className='about-div1'>
           <div className='div1-txt'>
@@ -59,24 +60,24 @@ const About = () => {
           </div>
           <img className='about-img-2' src={aboutImg3} alt='' />
         </div>
-
-        <div className='cta'>
-          <div className='title'>
-            <h1>
-              Let’s <span className='text-highlight'>Craft</span> Your Vision
-            </h1>
-          </div>
-          <p>
-            Let pixevine turn your ideas into visuals that inspire and elevate
-            your brand. We’re here to support your journey with designs crafted
-            with care and precision.
-          </p>
-          <Link to='/contact'>
-            <button>Contact Now</button>
-          </Link>
+      </div>
+      <div className='cta'>
+        <div className='title'>
+          <h1>
+            Let’s <span className='text-highlight'>Craft</span> Your Vision
+          </h1>
         </div>
+        <p>
+          Let pixevine turn your ideas into visuals that inspire and elevate
+          your brand. We’re here to support your journey with designs crafted
+          with care and precision.
+        </p>
+        <Link to='/contact'>
+          <button>Contact Now</button>
+        </Link>
       </div>
     </div>
+    </>
   )
 }
 
