@@ -9,12 +9,4 @@ export default defineConfig({
     port: 3000, // Port number for the dev server
     open: true, // Automatically opens the app in the default browser
   },
-  build: {
-    rollupOptions: {
-      input: {
-        main: './index.html',
-        404: './index.html',
-      },
-    },
-  },
 })
