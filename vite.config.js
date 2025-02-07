@@ -9,7 +9,6 @@ export default defineConfig({
     port: 3000, // Port number for the dev server
     open: true, // Automatically opens the app in the default browser
   },
-  base: '/#/',
   build: {
     rollupOptions: {
       input: {
