@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import Nav from './Components/Nav/Nav'
 import Home from './Pages/Home'
@@ -13,14 +13,14 @@ import ScrollToTop from './Components/ScrollToTop'
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <div>
         <Nav />
         <MainRoutes />
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
