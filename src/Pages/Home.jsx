@@ -18,7 +18,6 @@ const Home = () => {
   useEffect(() => {
     let controls
     let finalPosition = -width - 100
-    console.log(finalPosition)
     controls = animate(xTranslation, [0, finalPosition], {
       ease: 'linear',
       duration: 8,

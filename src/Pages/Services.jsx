@@ -6,7 +6,6 @@ import icon2 from '../assets/webIcon.svg'
 import icon3 from '../assets/packageIcon.svg'
 import icon4 from '../assets/brandIcon.svg'
 const Services = ({gradient}) => {
-  console.log(gradient)
   const servicesData = [
     {
       header: 'Logo Design',

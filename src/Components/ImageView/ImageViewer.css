@@ -33,9 +33,9 @@
 .image-view-img-web-cont {
   border-radius: 17px 17px 0 0;
   width: 100%; /* Adjusts width based on screen size */
-  max-width: 768px; /* Prevents it from getting too large */
+  max-width: 797px; /* Prevents it from getting too large */
   height: auto; /* Adjusts height dynamically */
-  max-height: 466px; /* Ensures it doesn't grow too much */
+  max-height: 448.295px; /* Ensures it doesn't grow too muc*/
   overflow-y: auto; /* Enables scrolling if needed */
   scrollbar-width: none; /* Hides scrollbar in Firefox */
   
@@ -50,6 +50,7 @@
 .image-navbar{
   background-color: #0A481F;
   width: 100%;
+  height: 78.88px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,6 +137,15 @@
     z-index: 1000;
     margin-top: 0;
     padding: 0; 
+}
+.web-view-cont{
+    width: 100%;
+    height: 100dvh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.image-full-web{
+  width: 100%;
 }
 .image-full{
     width: 100%;
@@ -234,7 +244,11 @@ transform: scale(1);
 }
 
 /* Medium (tablets, 768px and below) */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .image-view-img-web-cont {
+    max-height: 360px;
+  }
+}
 
 /* Small (phones, 576px and below) */
 @media (max-width: 576px) {
@@ -260,7 +274,7 @@ transform: scale(1);
     width: 100%;
     height: fit-content;
   }
-  .fullsrn-btn{
-    display: none;
+  .image-view-img-web-cont {
+    max-height: 300px;
   }
 }
