@@ -22,7 +22,7 @@ const ProjectDetail = () => {
               {work.name} <span className='text-highlight'>{work.title}</span>
             </h1>
           </div>
-          <ImageViewer title={work.title} images={work.images} />
+          <ImageViewer name={work.name} title={work.title} images={work.images} />
           <div className='about-project'>
             <h2>
               About this <span className='text-highlight'>{work.title}</span>

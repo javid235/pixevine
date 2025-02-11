@@ -7,7 +7,6 @@ import full from '../../assets/full.svg'
 import './ImageViewer.css'
 
 const ImageViewer = (props) => {
-  const [isVisible, setIsVisible] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isFullScreen, setIsFullScreen] = useState(false)
   const [isLargeImage, setIsLargeImage] = useState(null) 
@@ -21,13 +20,6 @@ const ImageViewer = (props) => {
        setIsLargeImage(img.naturalHeight >= 1100) // Check source image height
      }
    }, [currentIndex, images])
-
-  const handleInteraction = () => {
-    setIsVisible(true)
-    setTimeout(() => {
-      setIsVisible(false)
-    }, 3000)
-  }
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -55,18 +47,27 @@ const ImageViewer = (props) => {
           transition={{ duration: 0.4, ease: 'easeInOut' }}
           className='fullscreen'
         >
-          <div className='full-close-cont'>
+          {/* <div className='full-close-cont'>
             <button className='fullsrn-btn-full' onClick={toggleFullScreen}>
               <img src={close} alt='Close' />
             </button>
-          </div>
+          </div> */}
           <div className='full-image-cont'>
+            <div style={{ width: '100%', padding: '30px 10px', position:'relative'}}>
+              <p style={{ textAlign: 'center' }}>
+                {props.name} {props.title}
+              </p>
+              <button className='fullsrn-btn-full' onClick={toggleFullScreen}>
+                <img src={close} alt='Close' />
+              </button>
+            </div>
             <div className='image-full'>
               {images.map((img, i) => {
                 return <img className='img-full-new' src={img} />
               })}
-              <div style={{width:'100%', padding: '40px 20px 60px 20px'}}>
-                <p style={{textAlign: 'center'}}>Designed By Javid</p></div>
+              <div style={{ width: '100%', padding: '40px 20px 60px 20px' }}>
+                <p style={{ textAlign: 'center' , color:'#828282'}}>Designed By Javid</p>
+              </div>
             </div>
           </div>
         </motion.div>

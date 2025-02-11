@@ -139,7 +139,7 @@
     padding: 0; 
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     overflow-y: scroll;
     scrollbar-width: none;
 }
@@ -181,9 +181,10 @@
     border: none;
     cursor: pointer;
     transition: .2s;
-    position: fixed;
-    top: 30px;
+    position: absolute;
+    top: 50%;
     right: 30px;
+    translate: -7px -47%;
 }
 .fullsrn-btn-full:hover{
     transform: scale(1.15);
@@ -243,6 +244,9 @@ transform: scale(1);
 
 /* Medium (tablets, 768px and below) */
 @media (max-width: 768px) {
+  .fullscreen{
+    padding: 0;
+  }
   .image-view-img-web-cont {
     max-height: 360px;
   }
