@@ -65,6 +65,8 @@ const ImageViewer = (props) => {
               {images.map((img, i) => {
                 return <img className='img-full-new' src={img} />
               })}
+              <div style={{width:'100%', padding: '40px 20px 60px 20px'}}>
+                <p style={{textAlign: 'center'}}>Designed By Javid</p></div>
             </div>
           </div>
         </motion.div>
