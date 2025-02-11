@@ -224,7 +224,7 @@ input::placeholder, textarea::placeholder {
 
 .title h1{
   color: white;
-  font-size: 64px;
+  font-size: 62px;
   font-weight: 600;
   text-align: center;
 }
@@ -319,14 +319,14 @@ input::placeholder, textarea::placeholder {
 /* Large (desktops, 992px and below) */
 @media (max-width: 992px) {
   .title h1{
-    font-size:38px;
+    font-size:36px;
   }
 }
 
 /* Medium (tablets, 768px and below) */
 @media (max-width: 768px) {
   .title h1{
-    font-size:35px;
+    font-size:30px;
   }
   .work-card{
     flex-direction: column;
@@ -356,7 +356,7 @@ input::placeholder, textarea::placeholder {
     gap: 20px;
   }
   .title h1{
-    font-size:35px;
+    font-size:26px;
   }
 }
 @media (max-width: 510px){

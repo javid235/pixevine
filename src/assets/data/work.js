@@ -1,11 +1,11 @@
 import work1 from '../creativise/8.webp'
-import img1 from '../creativise/1.webp'
-import img2 from '../creativise/2.webp'
-import img3 from '../creativise/3.webp'
-import img4 from '../creativise/4.webp'
-import img5 from '../creativise/5.webp'
-import img6 from '../creativise/6.webp'
-import img7 from '../creativise/7.webp'
+import img1 from '../creativise/1.jpg'
+import img2 from '../creativise/2.jpg'
+import img3 from '../creativise/3.jpg'
+import img4 from '../creativise/4.jpg'
+import img5 from '../creativise/5.jpg'
+import img6 from '../creativise/6.jpg'
+import img7 from '../creativise/7.jpg'
 
 import work2 from '../longeuity/work2.webp'
 import long1 from '../longeuity/Longeuity-1.webp'
@@ -46,7 +46,7 @@ let works = [
       "The Creatiwise logo is a thoughtful combination of geometric elements, symbolizing the brand's core values of creativity, precision, and innovation. Each component reflects a deeper meaning tied to the brand's identity",
     details:
       "The Creatiwise logo is a thoughtful combination of geometric elements, symbolizing the brand's core values of creativity, precision, and innovation. Each component reflects a deeper meaning tied to the brand's identity:\n\nPen Tool: The design begins with a nod to the pen tool,representing design and craftsmanship—an essential tool in digital creativity. It highlights the brand’s expertise in design services.\n\nLetter C: The circular form subtly incorporates the letter C,symbolizing Creatiwise while also representing continuity and unity, key aspects of the brand’s commitment to delivering cohesive solutions.\n\nLetter W: The interplay of shapes also forms a W, completing the brand name’s initials. This detail emphasizes the brand's ability to balance creativity with structure and precision.\n\nColor and Geometry: The vibrant blue (#007BFF) signifies trustworthiness, innovation, and technology. The minimal and balanced geometric shapes communicate clarity, modernity, and professionalism.\n\nTogether, the logo conveys Creatiwise's vision of blending artistic ingenuity with precise execution, making it a standout in the design and branding industry.",
-    thumbnail: work1,
+    thumbnail: img1,
     images: [img1, img2, img3, img4, img5, img6, img7],
   },
   {
