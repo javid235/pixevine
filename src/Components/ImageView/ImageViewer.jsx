@@ -61,69 +61,12 @@ const ImageViewer = (props) => {
             </button>
           </div>
           <div className='full-image-cont'>
-            {images.length != 1 ? (
-              <button
-                className='left-btn-full'
-                onClick={() => {
-                  handlePrev()
-                  handleInteraction()
-                }}
-              >
-                <img
-                  className='left-btn-img-full'
-                  src={leftArrow}
-                  alt='Previous'
-                />
-              </button>
-            ) : (
-              <div></div>
-            )}
-
-            {isLargeImage ? (
-              <div className='web-view-cont'>
-                <img
-                  className='image-full-web'
-                  src={images[currentIndex]}
-                  alt='Full View'
-                />
-              </div>
-            ) : (
-              <img
-                className='image-full'
-                src={images[currentIndex]}
-                alt='Full View'
-              />
-            )}
-            {images.length != 1 ? (
-              <button
-                className='right-btn-full'
-                onClick={() => {
-                  handleNext()
-                  handleInteraction()
-                }}
-              >
-                <img
-                  className='right-btn-img-full'
-                  src={rightArrow}
-                  alt='Next'
-                />
-              </button>
-            ) : (
-              <div></div>
-            )}
-          </div>
-          {isVisible && (
-            <div className='count-cont'>
-              <div className='image-count-full'>
-                {images.map((item, i) => (
-                  <div
-                    key={i}
-                    className={i === currentIndex ? 'img-sel' : 'img'}
-                  ></div>
-                ))}
-              </div>
+            <div className='image-full'>
+              {images.map((img, i) => {
+                return <img className='img-full-new' src={img} />
+              })}
             </div>
-          )}
+          </div>
         </motion.div>
       ) : (
         <div className='image-view'>
